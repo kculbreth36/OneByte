@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5BD6C;
+    overflow-x: hidden;
+    height: 100%;
+}
+.container-fluid {
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
+.footer {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;             
+    background-color: #F5BD6C;
+    color: #333;
+    font-family: Arial, sans-serif, "Times New Roman";
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 20px;  
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+#home, .navbar, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border: 1px solid black;
+    margin: 0;
+    background-color: #F5BD6C;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #F2D2A7;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+header {
+    background-color: #F5BD6C;
+    border-style: none;
+}
+
+#homeMainText {
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-name: show-text;
+    transform-origin: center;
+    text-align: left;
+    font-size: 40px;
+    color: red;
+    margin: -10px 0 0 0;
+    text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white;
+}
+
+@keyframes show-text {
+    0% {
+        transform: scale(0);
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+#home {
+    background-color: #F5BD6C;
+    margin: 0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+#logo {
+    width: 30%;
+    height: 30%;
+    filter: contrast(120%);
+}
+
+#toplogo {
+    width: 6%;
+    height: 6%;
+    filter: contrast(100%);
+}
+
+#aboutUs {
+    background-color: #F5BD6C;
+    text-align: center;
+    padding: 20px;
+    padding-top: 25px;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-name: show-text;
+    transform-origin: center;
+}
+
+#about {
+    font-size: 24px;
+    padding: 5px;
+    color: #333;
+}
+
+#about2 {
+    font-size: 24px;
+    padding: 5px;
+    color: #333;
+}
+
+#loginSuccess {
+    text-align: center;
+    padding: 10px;
+    background-color: #F5BD6C;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2D2A7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background-color: #F2D2A7;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content, 
+.dropdown-content:hover {
+    display: block;
+}
+
+/********** */
+ .btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #494E6B;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #985E6D;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #494E6B;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #985E6D;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.cart-dropdown-content {
+    visibility: hidden;
+    opacity: 0; 
+    display: block; 
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    background-color: #F2D2A7;
+    width: 550px;
+    max-width: calc(100vw - 20px); 
+    max-height: calc(100vh - 20px); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto; 
+    transform: translateY(10px); 
+                transition: visibility 0.2s ease, opacity 0.2s ease; 
+}
+
+.cart-container {
+     width: 100%;
+}
+
+.section-header {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item, .cart-price, .cart-quantity {
+    font-size: 1.1em;
+    color: #333;
+}
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 15px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-total-price {
+    font-size: 1.2em;
+    color: #333;
+}
+            
+.btn-purchase {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.3em; 
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+ }
+
+.btn-purchase:hover {
+    background-color: red;
+}
+
+.cart-dropdown:hover .cart-dropdown-content,.cart-dropdown-content:hover {
+    visibility: visible; 
+    opacity: 1;
+}
+.content-section {
+    margin: 1em;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #985E6D;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+           
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #494E6B;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
